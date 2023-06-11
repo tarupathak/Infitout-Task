@@ -4,7 +4,7 @@ import filter from '../Images/filter.svg'
 
 const NavigationTwo = () => {
   return (
-    <div id="main-div">
+    <div className="main-div">
       <div className="nav-items2">
         <div>
           <span className="col-head1">Spot</span>
