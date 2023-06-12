@@ -1,8 +1,12 @@
-import React from "react";
-import arrow from '../Images/arrows.svg'
-import filter from '../Images/filter.svg'
+import React, { useState } from "react";
+import arrow from "../Images/arrows.svg";
+import filter from "../Images/filter.svg";
+import PopUpBasket from "./PopUpBasket";
 
 const NavigationTwo = () => {
+  const [show, setShow] = useState(false);
+  const closeModal = () => setShow(false);
+ 
   return (
     <div className="main-div">
       <div className="nav-items2">
@@ -31,16 +35,26 @@ const NavigationTwo = () => {
           <span>0.92</span>
         </div>
         <div>
-          <span className="col-head1">Support 1 <img src={arrow} alt="arrow"/></span>
+          <span className="col-head1">
+            Support 1 <img src={arrow} alt="arrow" />
+          </span>
           <span>18,100</span>
         </div>
         <div>
-          <span className="col-head1">Resistance 1 <img src={arrow} alt="arrow" /></span>
+          <span className="col-head1">
+            Resistance 1 <img src={arrow} alt="arrow" />
+          </span>
           <span>18,500</span>
         </div>
       </div>
-      <div><img src={filter} alt="filter" />  Filters</div>
-      <button className="btn">Basket</button>
+      <div>
+        <img src={filter} alt="filter" /> Filters
+      </div>
+      <div >
+      <button className="btn" onClick={() => setShow(true)} >Basket</button>
+      {show && <PopUpBasket closeModal={closeModal} />}
+      </div>
+     
     </div>
   );
 };
