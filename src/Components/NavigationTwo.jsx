@@ -7,10 +7,14 @@ import Dropdown from "./Dropdown";
 const NavigationTwo = () => {
   const [show, setShow] = useState(false);
   const closeModal = () => setShow(false);
- 
+
   return (
     <div className="main-div">
       <div className="nav-items2">
+        <input id="nav-input" value="NIFTY"></input>
+        <div className="nav-input-label">scrip</div>
+        <input id="nav-input" value="18 MAY 2023"></input>
+        <div className="nav-input-label">EXP</div>
         <div>
           <span className="col-head1">Spot</span>
           <span>
@@ -51,11 +55,12 @@ const NavigationTwo = () => {
       <div>
         <img src={filter} alt="filter" /> Filters
       </div>
-      <div >
-      <button className="btn" onClick={() => setShow(true)} >Basket</button>
-      {show && <PopUpBasket closeModal={closeModal} />}
+      <div>
+        <button className="btn" onClick={() => setShow(true)}>
+          Basket
+        </button>
+        {show && <PopUpBasket closeModal={closeModal} />}
       </div>
-     
     </div>
   );
 };

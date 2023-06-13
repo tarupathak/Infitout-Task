@@ -68,6 +68,25 @@ nav {
 
 /*<----------------------Navigation Two-------------------->*/
 
+.nav-items2 input {
+  width: 10.6vw;
+  height: 2.8vw;
+  outline: none;
+  padding-left: 1vw;
+}
+
+.nav-input-label {
+  position: relative;
+  z-index: 4;
+  top: -1.5vw;
+  left: -9.5vw;
+  padding: 0 0.4vw !important;
+  color: #888888;
+  font-size: 1.2vw;
+  pointer-events: none;
+  border: 0;
+  background-color: white;
+}
 .main-div {
   margin: 2vh 5vw;
   display: flex;
@@ -404,17 +423,6 @@ th {
 
 #chng2 {
   color: #ff6b6b;
-}
-
-th {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 19px;
-  display: flex;
-  text-align: center;
-
-  color: #000000;
 }
 
 .box {
