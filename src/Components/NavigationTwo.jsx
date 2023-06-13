@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import arrow from "../Images/arrows.svg";
 import filter from "../Images/filter.svg";
 import PopUpBasket from "./PopUpBasket";
-import Dropdown from "./Dropdown";
+import FilterDropdown from "./FilterDropdown";
 
 const NavigationTwo = () => {
   const [show, setShow] = useState(false);
   const closeModal = () => setShow(false);
+  const [pop, setPop] = useState(false);
+  const closePop = () => setPop(false);
 
   return (
     <div className="main-div">
@@ -52,9 +54,13 @@ const NavigationTwo = () => {
           <span>18,500</span>
         </div>
       </div>
-      <div>
-        <img src={filter} alt="filter" /> Filters
+      <div style={{cursor:"pointer"}}>
+        <div onClick={() => setPop(true)}>
+          <img src={filter} alt="filter" /> Filters
+        </div>
+        {pop && <FilterDropdown closePop={closePop} />}
       </div>
+
       <div>
         <button className="btn" onClick={() => setShow(true)}>
           Basket
