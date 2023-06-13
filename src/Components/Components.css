@@ -505,7 +505,7 @@ h2 {
   background-color: #2C57F5;
 }
 
-.basketBtn span{ 
+#basketBtn{ 
   min-width: 20px;
   text-align: center;
   background-color: #F8EB77;
