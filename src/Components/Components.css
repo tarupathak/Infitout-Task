@@ -239,7 +239,7 @@ h2 {
   text-align: center;
 }
 
-.model-btn {
+.model-btn1 {
   width: 97px;
   height: 29px;
   color: #2c57f5;
@@ -278,6 +278,7 @@ td input {
   width: 20px;
   height: 20px;
   align-items: center;
+  text-align: center;
   background: #86c6e6;
 }
 
@@ -286,12 +287,18 @@ td input {
   height: 20px;
   align-items: center;
   background: #ffa8a8;
+
+}
+
+.grey-col{
+  background-color: #F9F9F9;
 }
 
 .blue-col {
   width: 46px;
   height: 20px;
   color: white;
+  text-align: center;
   background: #2c57f5;
 }
 
@@ -435,34 +442,19 @@ th {
 
 /*<----------------------Filter-------------------->*/
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-.container {
-  margin: 5rem;
-  
-}
 
-.modal-wrapper {
+.filter-container {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-}
-
-.modal-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 35%;
+  left: 75%;
   transform: translate(-50%, -50%);
-  max-width: 30rem;
-  padding: 2rem 3rem;
+  width: 20vw;
+  height: 24vw;
+  padding: 1vw;
   border-radius: 0.5rem;
   background-color: white;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);;
 }
 
 h2 {
@@ -484,5 +476,32 @@ h2 {
   width: 9vw;
   margin-left: 7vw;
   border-radius: 0.5vw;
+}
+
+.filter-input{
+  width: 8vw;
+  height: 2.3vw;
+  margin: 0.2vw 0;
+  padding: 0.2vw 0.5vw;
+}
+
+#resetFilter{
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  margin: 1vw 0.5vw;
+  border: 2px solid #2C57F5;
+  padding: 0.5vw 1vw;
+  color: #2C57F5;
+}
+
+#applyFilter{
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  margin: 1vw 0.5vw;
+  padding: 0.7vw 1vw;
+  color: white;
+  background-color: #2C57F5;
 }
 

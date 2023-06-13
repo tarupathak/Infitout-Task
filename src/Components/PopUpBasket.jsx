@@ -42,7 +42,7 @@ const PopUpBasket = ({ closeModal }) => {
           </tr>
           {BasketItems.map((item) => {
             return (
-              <tr>
+              <tr className="grey-col">
                 <td>{item.instrument}</td>
                 <td className="b-col">{item.bs}</td>
                 <td className="blue-col">{item.type}</td>
@@ -80,7 +80,7 @@ const PopUpBasket = ({ closeModal }) => {
             <img src={plusBlack} alt="plus" />
             Auto Hedge
           </button>
-          <button className="model-btn" onClick={closeModal}>
+          <button className="model-btn1" onClick={closeModal}>
             Close Basket
           </button>
           <button className="model-btn2">Place Order</button>

@@ -16,7 +16,7 @@ const NavigationTwo = () => {
         <input id="nav-input" value="NIFTY"></input>
         <div className="nav-input-label">scrip</div>
         <input id="nav-input" value="18 MAY 2023"></input>
-        <div className="nav-input-label">EXP</div>
+        <div className="nav-input-label">Exp</div>
         <div>
           <span className="col-head1">Spot</span>
           <span>
