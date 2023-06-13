@@ -272,7 +272,7 @@ td input {
 .blue-col {
   width: 46px;
   height: 20px;
-
+  color: white;
   background: #2c57f5;
 }
 
@@ -318,4 +318,109 @@ th {
   font-size: 12px;
   line-height: 16px;
   color: #393939;
+}
+
+/*<----------------------Table-------------------->*/
+
+#flex-component {
+  display: flex;
+  align-items: center;
+  width: 90.6vw;
+  height: 8.1vh;
+  margin-left: 4.6vw;
+  background: #ffffff;
+  justify-content: space-around;
+}
+
+#table-flex {
+  margin-left: 4.6vw;
+  margin-right: 10.6vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#row-1 {
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-between;
+  background: #e8effb;
+  border-bottom: 1px solid #99b8ed;
+  align-items: center;
+  padding: 2vh;
+}
+
+#row-2 {
+  display: flex;
+  flex-direction: row;
+  width: 10vw;
+  justify-content: space-between;
+  height: 39px;
+  background: #efe8fb;
+  text-align: center;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #d5bcfe;
+  align-items: center;
+}
+
+#row-3 {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-between;
+  height: 40px;
+  background: #e8effb;
+  border-bottom: 1px solid #99b8ed;
+  align-items: center;
+  padding-right: 2vh;
+}
+
+.row-elements {
+  border-bottom: 1px solid #000000;
+  background-color: #fffacd;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  border: 1px solid #f8eb77;
+  justify-content: space-between;
+}
+
+.row-elements3 {
+  border-bottom: 1px solid #000000;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  justify-content: space-between;
+}
+
+#chng1 {
+  color: #27ae60;
+}
+
+#chng2 {
+  color: #ff6b6b;
+}
+
+th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  text-align: center;
+
+  color: #000000;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #d0d0d0;
 }
