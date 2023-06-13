@@ -61,10 +61,11 @@ const NavigationTwo = () => {
         {pop && <FilterDropdown closePop={closePop} />}
       </div>
 
-      <div>
+      <div className="basketBtn">
         <button className="btn" onClick={() => setShow(true)}>
           Basket
         </button>
+        <span>3</span>
         {show && <PopUpBasket closeModal={closeModal} />}
       </div>
     </div>

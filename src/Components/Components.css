@@ -505,3 +505,16 @@ h2 {
   background-color: #2C57F5;
 }
 
+.basketBtn span{ 
+  min-width: 20px;
+  text-align: center;
+  background-color: #F8EB77;
+  padding: 4.5px;
+  position: absolute;
+  top: 68px;
+  right: 70px;
+  font-size: 12px;
+  line-height: 1;
+  border-radius: 10px;
+}
+
